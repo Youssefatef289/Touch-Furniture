@@ -70,8 +70,9 @@ const Products = () => {
       })
     }
 
-    // Office (TV libraries) - 24 images
-    for (let i = 1; i <= 24; i++) {
+    // Office (TV libraries) - 17 jpeg images + 5 jpg images = 22 images
+    // First add jpeg images (1-17)
+    for (let i = 1; i <= 17; i++) {
       products.push({
         id: id++,
         name: language === 'ar' ? `أثاث مكتب ${i}` : `Office Furniture ${i}`,
@@ -80,6 +81,18 @@ const Products = () => {
         categoryKey: 'office',
         image: `/image/TV libraries/TV libraries (${i}).jpeg`,
         imageIndex: i - 1,
+      })
+    }
+    // Then add jpg images (1-5)
+    for (let i = 1; i <= 5; i++) {
+      products.push({
+        id: id++,
+        name: language === 'ar' ? `أثاث مكتب ${17 + i}` : `Office Furniture ${17 + i}`,
+        price: language === 'ar' ? `${(Math.floor(Math.random() * 2000) + 300).toLocaleString('ar-SA')} ر.س` : `$${(Math.floor(Math.random() * 2000) + 300).toLocaleString()}`,
+        category: t.collections.office,
+        categoryKey: 'office',
+        image: `/image/TV libraries/TV libraries (${i}).jpg`,
+        imageIndex: 17 + i - 1,
       })
     }
 

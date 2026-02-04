@@ -36,7 +36,7 @@ const FeaturedCollections = () => {
       name: t.collections.office,
       image: '/image/TV libraries/TV libraries (1).jpeg',
       path: '/collection/office',
-      count: language === 'ar' ? '24+ قطعة' : '24+ Items',
+      count: language === 'ar' ? '22+ قطعة' : '22+ Items',
     },
     {
       name: t.collections.outdoor,

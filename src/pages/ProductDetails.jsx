@@ -37,7 +37,12 @@ const ProductDetails = () => {
     'office': {
       name: t.collections.office,
       folder: 'TV libraries',
-      images: Array.from({ length: 24 }, (_, i) => `/image/TV libraries/TV libraries (${i + 1}).jpeg`),
+      images: [
+        // jpeg images (1-17)
+        ...Array.from({ length: 17 }, (_, i) => `/image/TV libraries/TV libraries (${i + 1}).jpeg`),
+        // jpg images (1-5)
+        ...Array.from({ length: 5 }, (_, i) => `/image/TV libraries/TV libraries (${i + 1}).jpg`),
+      ],
     },
     'outdoor': {
       name: t.collections.outdoor,
