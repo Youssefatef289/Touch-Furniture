@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: var(--font-family, 'Josefin Sans', sans-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+    font-family: var(--font-family, 'Josefin Sans', sans-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-family: var(--font-family, 'Josefin Sans', sans-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Arabic font styling */
+  html[lang="ar"] * {
+    font-family: 'Cairo', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  html[lang="ar"] body {
+    font-family: 'Cairo', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3,
+  html[lang="ar"] h4,
+  html[lang="ar"] h5,
+  html[lang="ar"] h6 {
+    font-family: 'Cairo', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+
+  /* English font styling */
+  html[lang="en"] * {
+    font-family: 'Josefin Sans', sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  html[lang="en"] body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  html[lang="en"] h1,
+  html[lang="en"] h2,
+  html[lang="en"] h3,
+  html[lang="en"] h4,
+  html[lang="en"] h5,
+  html[lang="en"] h6 {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-effect {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-500;
+}
+

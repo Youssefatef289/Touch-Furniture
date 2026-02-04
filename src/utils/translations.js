@@ -1,0 +1,273 @@
+export const translations = {
+  ar: {
+    // Navigation
+    nav: {
+      home: 'الرئيسية',
+      collections: 'المجموعات',
+      about: 'من نحن',
+      products: 'المنتجات',
+      gallery: 'المعرض',
+      contact: 'اتصل بنا',
+    },
+    // Hero Slider
+    hero: {
+      badge: 'أثاث فاخر',
+      shopNow: 'تسوق الآن',
+      exploreCollection: 'استكشف المجموعات',
+    },
+    // Common
+    common: {
+      loading: 'جاري التحميل...',
+      readMore: 'اقرأ المزيد',
+      viewAll: 'عرض الكل',
+      addToCart: 'أضف إلى السلة',
+      quickView: 'عرض سريع',
+      all: 'الكل',
+    },
+    // Home Page
+    home: {
+      featuredCollections: 'المجموعات المميزة',
+      featuredCollectionsDesc: 'استكشف مجموعات الأثاث المختارة بعناية لكل غرفة في منزلك',
+      bestSellers: 'الأكثر مبيعاً',
+      bestSellersDesc: 'اكتشف قطع الأثاث الأكثر شعبية، المحبوبة من العملاء حول العالم',
+      customManufacturing: 'التصنيع بالعمولة',
+      customManufacturingDesc: 'نقدم لك خدمة التصنيع بالعمولة لأثاثك المميز. صمم أثاثك حسب رغبتك واحصل على قطع فريدة تناسب ذوقك ومساحتك',
+      orderNow: 'اطلب الآن',
+      whyChooseUs: 'لماذا تختارنا',
+      whyChooseUsDesc: 'نحن ملتزمون بتقديم أفضل تجربة تسوق للأثاث',
+      testimonials: 'ماذا يقول عملاؤنا',
+      testimonialsDesc: 'لا تأخذ كلمتنا فقط - استمع إلى عملائنا الراضين',
+    },
+    // Collections
+    collections: {
+      title: 'مجموعاتنا',
+      description: 'استكشف مجموعة واسعة من مجموعات الأثاث لكل غرفة',
+      allCollections: 'جميع المجموعات',
+      livingRoom: 'غرفة المعيشة',
+      bedroom: 'غرفة النوم',
+      diningRoom: 'غرفة الطعام',
+      office: 'المكتب',
+      outdoor: 'الخارجي',
+      childrenRoom: 'غرفة الأطفال',
+    },
+    // Products
+    products: {
+      title: 'منتجاتنا',
+      description: 'تصفح مجموعتنا الكاملة من الأثاث الفاخر',
+      allProducts: 'جميع المنتجات',
+      filter: 'تصفية',
+    },
+    // About
+    about: {
+      title: 'من نحن - Touch Furniture',
+      subtitle: 'نحن شغوفون بإنشاء مساحات جميلة وعملية تعكس أسلوبك الفريد وشخصيتك',
+      story: 'قصتنا',
+      storyText1: 'تأسست Touch Furniture بمهمة بسيطة: جعل الأثاث الفاخر في متناول الجميع. ما بدأ كعمل عائلي صغير نما ليصبح اسماً موثوقاً في صناعة الأثاث.',
+      storyText2: 'على مر السنين، قمنا ببناء علاقات مع الحرفيين المهرة والموردين الموثوقين في جميع أنحاء العالم، مما يسمح لنا بتقديم مجموعة واسعة من الأثاث عالي الجودة بأسعار تنافسية.',
+      storyText3: 'اليوم، نحن فخورون بخدمة آلاف العملاء الراضين الذين يثقون بنا لمساعدتهم في إنشاء منازل جميلة ومريحة يحبونها.',
+      values: 'قيمنا',
+      valuesDesc: 'المبادئ التي توجه كل ما نقوم به',
+      qualityFirst: 'الجودة أولاً',
+      qualityFirstDesc: 'لا نتساهل أبداً في الجودة. يتم فحص كل قطعة بعناية للوفاء بمعاييرنا العالية.',
+      customerFocus: 'التركيز على العميل',
+      customerFocusDesc: 'رضاك هو أولويتنا. نتجاوز التوقعات لضمان حبك لأثاثك.',
+      innovation: 'الابتكار',
+      innovationDesc: 'نبقى في المقدمة من الاتجاهات ونبتكر باستمرار لجلب أحدث تصميمات الأثاث.',
+      sustainability: 'الاستدامة',
+      sustainabilityDesc: 'نحن ملتزمون بالممارسات المستدامة والمواد الصديقة للبيئة في التصنيع.',
+    },
+    // Gallery
+    gallery: {
+      title: 'المعرض',
+      description: 'استكشف إعدادات الأثاث الجميلة واحصل على الإلهام لتحويل منزلك القادم',
+    },
+    // Contact
+    contact: {
+      title: 'تواصل معنا',
+      subtitle: 'نود أن نسمع منك. أرسل لنا رسالة وسنرد في أقرب وقت ممكن',
+      sendMessage: 'أرسل لنا رسالة',
+      name: 'الاسم',
+      email: 'البريد الإلكتروني',
+      message: 'الرسالة',
+      send: 'إرسال',
+      contactInfo: 'معلومات الاتصال',
+      address: 'العنوان',
+      phone: 'الهاتف',
+      hours: 'ساعات العمل',
+      addressValue: '123 شارع الأثاث\nمنطقة التصميم، المدينة 12345',
+      phoneValue1: '+1 (234) 567-890',
+      phoneValue2: '+1 (234) 567-891',
+      emailValue1: 'info@touchfurniture.com',
+      emailValue2: 'support@touchfurniture.com',
+      hoursValue1: 'الاثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً',
+      hoursValue2: 'السبت - الأحد: 10:00 صباحاً - 4:00 مساءً',
+    },
+    // Footer
+    footer: {
+      description: 'راحة عصرية لمنزلك. مجموعات أثاث فاخرة مصممة لرفع مساحة معيشتك.',
+      quickLinks: 'روابط سريعة',
+      support: 'الدعم',
+      shippingInfo: 'معلومات الشحن',
+      returns: 'الإرجاع',
+      newsletter: 'النشرة الإخبارية',
+      newsletterDesc: 'اشترك للحصول على تحديثات حول المجموعات الجديدة والعروض الحصرية.',
+      subscribe: 'اشترك',
+      emailPlaceholder: 'أدخل بريدك الإلكتروني',
+      copyright: 'جميع الحقوق محفوظة',
+    },
+    // Features
+    features: {
+      highQuality: 'مواد عالية الجودة',
+      highQualityDesc: 'نستخدم فقط أفضل المواد والحرفية لضمان المتانة والطول.',
+      customDesigns: 'تصاميم مخصصة',
+      customDesignsDesc: 'خصص أثاثك ليتطابق مع أسلوبك الفريد ومتطلبات مساحتك.',
+      fastDelivery: 'تسليم سريع',
+      fastDeliveryDesc: 'خدمة توصيل سريعة وموثوقة لإيصال أثاثك إلى عتبة دارك في الوقت المحدد.',
+      affordablePrices: 'أسعار معقولة',
+      affordablePricesDesc: 'أثاث عالي الجودة بأسعار تنافسية تناسب ميزانيتك.',
+    },
+    // Stats
+    stats: {
+      yearsExperience: 'سنوات من الخبرة',
+      happyCustomers: 'عميل سعيد',
+      productsAvailable: 'منتج متاح',
+      designAwards: 'جائزة تصميم',
+    },
+  },
+  en: {
+    // Navigation
+    nav: {
+      home: 'Home',
+      collections: 'Collections',
+      about: 'About',
+      products: 'Products',
+      gallery: 'Gallery',
+      contact: 'Contact',
+    },
+    // Hero Slider
+    hero: {
+      badge: 'Premium Furniture',
+      shopNow: 'Shop Now',
+      exploreCollection: 'Explore Collection',
+    },
+    // Common
+    common: {
+      loading: 'Loading...',
+      readMore: 'Read More',
+      viewAll: 'View All',
+      addToCart: 'Add to Cart',
+      quickView: 'Quick View',
+      all: 'All',
+    },
+    // Home Page
+    home: {
+      featuredCollections: 'Featured Collections',
+      featuredCollectionsDesc: 'Explore our carefully curated furniture collections for every room in your home',
+      bestSellers: 'Best Sellers',
+      bestSellersDesc: 'Discover our most popular furniture pieces, loved by customers worldwide',
+      customManufacturing: 'Custom Manufacturing',
+      customManufacturingDesc: 'We offer custom manufacturing services for your unique furniture. Design your furniture according to your preferences and get unique pieces that suit your taste and space',
+      orderNow: 'Order Now',
+      whyChooseUs: 'Why Choose Us',
+      whyChooseUsDesc: 'We\'re committed to providing you with the best furniture shopping experience',
+      testimonials: 'What Our Customers Say',
+      testimonialsDesc: 'Don\'t just take our word for it - hear from our satisfied customers',
+    },
+    // Collections
+    collections: {
+      title: 'Our Collections',
+      description: 'Explore our wide range of furniture collections for every room',
+      allCollections: 'All Collections',
+      livingRoom: 'Living Room',
+      bedroom: 'Bedroom',
+      diningRoom: 'Dining Room',
+      office: 'Office',
+      outdoor: 'Outdoor',
+      childrenRoom: 'Children\'s Room',
+    },
+    // Products
+    products: {
+      title: 'Our Products',
+      description: 'Browse through our complete collection of premium furniture',
+      allProducts: 'All Products',
+      filter: 'Filter',
+    },
+    // About
+    about: {
+      title: 'About Touch Furniture',
+      subtitle: 'We\'re passionate about creating beautiful, functional spaces that reflect your unique style and personality',
+      story: 'Our Story',
+      storyText1: 'Touch Furniture was founded with a simple mission: to make premium furniture accessible to everyone. What started as a small family business has grown into a trusted name in the furniture industry.',
+      storyText2: 'Over the years, we\'ve built relationships with skilled craftsmen and trusted suppliers worldwide, allowing us to offer you an extensive collection of high-quality furniture at competitive prices.',
+      storyText3: 'Today, we\'re proud to serve thousands of satisfied customers who trust us to help them create beautiful, comfortable homes they love.',
+      values: 'Our Values',
+      valuesDesc: 'The principles that guide everything we do',
+      qualityFirst: 'Quality First',
+      qualityFirstDesc: 'We never compromise on quality. Every piece is carefully inspected to meet our high standards.',
+      customerFocus: 'Customer Focus',
+      customerFocusDesc: 'Your satisfaction is our priority. We go above and beyond to ensure you love your furniture.',
+      innovation: 'Innovation',
+      innovationDesc: 'We stay ahead of trends and continuously innovate to bring you the latest in furniture design.',
+      sustainability: 'Sustainability',
+      sustainabilityDesc: 'We\'re committed to sustainable practices and eco-friendly materials in our manufacturing.',
+    },
+    // Gallery
+    gallery: {
+      title: 'Gallery',
+      description: 'Explore our beautiful furniture setups and get inspired for your next home transformation',
+    },
+    // Contact
+    contact: {
+      title: 'Get In Touch',
+      subtitle: 'We\'d love to hear from you. Send us a message and we\'ll respond as soon as possible',
+      sendMessage: 'Send Us a Message',
+      name: 'Name',
+      email: 'Email',
+      message: 'Message',
+      send: 'Send Message',
+      contactInfo: 'Contact Information',
+      address: 'Address',
+      phone: 'Phone',
+      hours: 'Hours',
+      addressValue: '123 Furniture Street\nDesign District, City 12345',
+      phoneValue1: '+1 (234) 567-890',
+      phoneValue2: '+1 (234) 567-891',
+      emailValue1: 'info@touchfurniture.com',
+      emailValue2: 'support@touchfurniture.com',
+      hoursValue1: 'Mon - Fri: 9:00 AM - 6:00 PM',
+      hoursValue2: 'Sat - Sun: 10:00 AM - 4:00 PM',
+    },
+    // Footer
+    footer: {
+      description: 'Modern comfort for your home. Premium furniture collections designed to elevate your living space.',
+      quickLinks: 'Quick Links',
+      support: 'Support',
+      shippingInfo: 'Shipping Info',
+      returns: 'Returns',
+      newsletter: 'Newsletter',
+      newsletterDesc: 'Subscribe to get updates on new collections and exclusive offers.',
+      subscribe: 'Subscribe',
+      emailPlaceholder: 'Enter your email',
+      copyright: 'All rights reserved',
+    },
+    // Features
+    features: {
+      highQuality: 'High Quality Materials',
+      highQualityDesc: 'We use only the finest materials and craftsmanship to ensure durability and longevity.',
+      customDesigns: 'Custom Designs',
+      customDesignsDesc: 'Personalize your furniture to match your unique style and space requirements.',
+      fastDelivery: 'Fast Delivery',
+      fastDeliveryDesc: 'Quick and reliable delivery service to get your furniture to your doorstep on time.',
+      affordablePrices: 'Affordable Prices',
+      affordablePricesDesc: 'Premium quality furniture at competitive prices that fit your budget.',
+    },
+    // Stats
+    stats: {
+      yearsExperience: 'Years of Experience',
+      happyCustomers: 'Happy Customers',
+      productsAvailable: 'Products Available',
+      designAwards: 'Design Awards',
+    },
+  },
+}
+

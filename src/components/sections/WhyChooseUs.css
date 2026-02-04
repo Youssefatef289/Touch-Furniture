@@ -1,0 +1,133 @@
+/* Why Choose Us Section Styles */
+.why-choose-us {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .why-choose-us {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-choose-us {
+    padding: 8rem 0;
+  }
+}
+
+.why-choose-us-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-choose-us-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgb(17 24 29);
+}
+
+.dark .why-choose-us-title {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .why-choose-us-title {
+    font-size: 3rem;
+  }
+}
+
+.why-choose-us-description {
+  font-size: 1.125rem;
+  color: rgb(107 114 128);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark .why-choose-us-description {
+  color: rgb(156 163 175);
+}
+
+.why-choose-us-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .why-choose-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-choose-us-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(249 250 251);
+  transition: background-color 0.3s ease;
+}
+
+.dark .feature-card {
+  background-color: rgb(31 41 55);
+}
+
+.feature-card:hover {
+  background-color: rgb(245 232 199);
+}
+
+.dark .feature-card:hover {
+  background-color: rgb(55 48 40);
+}
+
+.feature-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(245 232 199);
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.dark .feature-icon-wrapper {
+  background-color: rgb(55 48 40);
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(138 117 96);
+}
+
+.dark .feature-icon {
+  color: rgb(184 171 154);
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: rgb(17 24 29);
+}
+
+.dark .feature-title {
+  color: white;
+}
+
+.feature-description {
+  color: rgb(107 114 128);
+}
+
+.dark .feature-description {
+  color: rgb(156 163 175);
+}
+

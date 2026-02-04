@@ -1,0 +1,48 @@
+/* About Page Styles */
+.about-page {
+  padding-top: 5rem;
+}
+
+.about-hero {
+  background: linear-gradient(to bottom, rgb(249 250 251), rgb(255 255 255));
+}
+
+.dark .about-hero {
+  background: linear-gradient(to bottom, rgb(31 41 55), rgb(17 24 39));
+}
+
+.about-story-image {
+  position: relative;
+  height: 24rem;
+}
+
+@media (min-width: 1024px) {
+  .about-story-image {
+    height: 500px;
+  }
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

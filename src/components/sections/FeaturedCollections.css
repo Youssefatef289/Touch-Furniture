@@ -1,0 +1,135 @@
+/* Featured Collections Section Styles */
+.featured-collections {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .featured-collections {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-collections {
+    padding: 8rem 0;
+  }
+}
+
+.featured-collections-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.featured-collections-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgb(17 24 29);
+}
+
+.dark .featured-collections-title {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .featured-collections-title {
+    font-size: 3rem;
+  }
+}
+
+.featured-collections-description {
+  font-size: 1.125rem;
+  color: rgb(107 114 128);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark .featured-collections-description {
+  color: rgb(156 163 175);
+}
+
+.featured-collections-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .featured-collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-collections-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.collection-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.collection-card-link {
+  display: block;
+}
+
+.collection-image-wrapper {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+  background-color: rgb(229 231 235);
+}
+
+.dark .collection-image-wrapper {
+  background-color: rgb(31 41 55);
+}
+
+.collection-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+  min-height: 100%;
+}
+
+.collection-card:hover .collection-image {
+  transform: scale(1.1);
+}
+
+.collection-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.2), transparent);
+}
+
+.collection-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: white;
+}
+
+.collection-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.collection-count {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
