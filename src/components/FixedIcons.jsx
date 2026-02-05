@@ -34,7 +34,7 @@ const FixedIcons = () => {
   const socialLinks = [
     {
       icon: FaFacebook,
-      url: 'https://www.facebook.com',
+      url: 'https://www.facebook.com/TOUCH.INERIOR',
       label: 'Facebook',
       color: '#1877F2',
     },
@@ -46,13 +46,13 @@ const FixedIcons = () => {
     },
     {
       icon: FaWhatsapp,
-      url: 'https://wa.me/1234567890',
+      url: 'https://wa.me/201220263076',
       label: language === 'ar' ? 'واتساب' : 'WhatsApp',
       color: '#25D366',
     },
     {
       icon: FaPhone,
-      url: 'tel:+1234567890',
+      url: 'tel:+201220263076',
       label: language === 'ar' ? 'اتصل بنا' : 'Call Us',
       color: '#25D366',
     },
@@ -86,8 +86,8 @@ const FixedIcons = () => {
                 <motion.a
                   key={social.label}
                   href={social.url}
-                  target={social.url.startsWith('tel:') || social.url === '#' ? '_self' : '_blank'}
-                  rel={social.url.startsWith('tel:') || social.url === '#' ? '' : 'noopener noreferrer'}
+                  target={social.url.startsWith('tel:') || social.url.startsWith('https://wa.me/') || social.url === '#' ? '_self' : '_blank'}
+                  rel={social.url.startsWith('tel:') || social.url.startsWith('https://wa.me/') || social.url === '#' ? '' : 'noopener noreferrer'}
                   onClick={social.onClick}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}

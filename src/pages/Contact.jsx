@@ -35,22 +35,26 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: t.contact.address,
-      details: language === 'ar' ? ['123 شارع الأثاث', 'منطقة التصميم، المدينة 12345'] : ['123 Furniture Street', 'Design District, City 12345'],
+      details: [t.contact.addressValue],
+      link: null,
     },
     {
       icon: FaPhone,
       title: t.contact.phone,
-      details: [t.contact.phoneValue1, t.contact.phoneValue2],
+      details: [t.contact.phoneValue1],
+      link: 'tel:+201220263076',
     },
     {
       icon: FaEnvelope,
       title: t.contact.email,
-      details: [t.contact.emailValue1, t.contact.emailValue2],
+      details: [t.contact.emailValue1],
+      link: 'mailto:touchfurniture3@gmail.com',
     },
     {
       icon: FaClock,
       title: t.contact.hours,
       details: [t.contact.hoursValue1, t.contact.hoursValue2],
+      link: null,
     },
   ]
 
@@ -170,9 +174,17 @@ const Contact = () => {
                       </div>
                       <div className="contact-info-content">
                         <h3>{info.title}</h3>
-                        {info.details.map((detail, i) => (
-                          <p key={i}>{detail}</p>
-                        ))}
+                        {info.link ? (
+                          <a href={info.link} className="contact-info-link">
+                            {info.details.map((detail, i) => (
+                              <p key={i}>{detail}</p>
+                            ))}
+                          </a>
+                        ) : (
+                          info.details.map((detail, i) => (
+                            <p key={i}>{detail}</p>
+                          ))
+                        )}
                       </div>
                     </motion.div>
                   )

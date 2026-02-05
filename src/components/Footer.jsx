@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../utils/translations'
 
@@ -25,10 +25,10 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: FaFacebook, url: '#', label: 'Facebook' },
+    { icon: FaFacebook, url: 'https://www.facebook.com/TOUCH.INERIOR', label: 'Facebook' },
     { icon: FaInstagram, url: '#', label: 'Instagram' },
-    { icon: FaTwitter, url: '#', label: 'Twitter' },
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
+    { icon: FaWhatsapp, url: 'https://wa.me/201220263076', label: 'WhatsApp' },
+    { icon: FaPhone, url: 'tel:+201220263076', label: language === 'ar' ? 'هاتف' : 'Phone' },
   ]
 
   return (
@@ -55,15 +55,16 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               {t.footer.description}
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 flex-wrap gap-2">
               {socialLinks.map((social) => {
                 const Icon = social.icon
+                const isPhoneOrWhatsApp = social.url.startsWith('tel:') || social.url.startsWith('https://wa.me/')
                 return (
                   <a
                     key={social.label}
                     href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={isPhoneOrWhatsApp ? '_self' : '_blank'}
+                    rel={isPhoneOrWhatsApp ? '' : 'noopener noreferrer'}
                     className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary-600 rounded-full transition-colors"
                     aria-label={social.label}
                   >
@@ -128,20 +129,20 @@ const Footer = () => {
             <h3 className="text-white font-serif text-lg mb-4">{t.contact.contactInfo}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="w-5 h-5 text-primary-400 mt-1" />
+                <FaMapMarkerAlt className="w-5 h-5 text-primary-400 mt-1 flex-shrink-0" />
                 <span className="text-gray-400 whitespace-pre-line">
                   {t.contact.addressValue}
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <FaPhone className="w-5 h-5 text-primary-400" />
-                <a href="tel:+1234567890" className="hover:text-primary-400 transition-colors">
+                <FaPhone className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                <a href="tel:+201220263076" className="hover:text-primary-400 transition-colors">
                   {t.contact.phoneValue1}
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <FaEnvelope className="w-5 h-5 text-primary-400" />
-                <a href="mailto:info@touchfurniture.com" className="hover:text-primary-400 transition-colors">
+                <FaEnvelope className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                <a href="mailto:touchfurniture3@gmail.com" className="hover:text-primary-400 transition-colors break-all">
                   {t.contact.emailValue1}
                 </a>
               </li>

@@ -149,6 +149,24 @@
   color: rgb(156 163 175);
 }
 
+.contact-info-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.contact-info-link:hover {
+  color: rgb(138 117 96);
+}
+
+.dark .contact-info-link:hover {
+  color: rgb(184 171 154);
+}
+
+.contact-info-link p {
+  margin: 0;
+}
+
 .contact-map {
   margin-top: 2rem;
   border-radius: 0.5rem;
